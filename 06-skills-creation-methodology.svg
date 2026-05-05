@@ -1,51 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540">
   <defs>
     <linearGradient id="bgb6" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a0533"/><stop offset="100%" stop-color="#2d1b69"/>
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b263b"/>
     </linearGradient>
   </defs>
-  <rect width="900" height="500" rx="16" fill="url(#bgb6)"/>
-  <text x="450" y="40" font-family="Arial" font-size="19" fill="#e2e8f0" text-anchor="middle" font-weight="bold">Skills 创作方法论 — 7 个已建 Skills 全览</text>
+  <rect width="900" height="540" rx="16" fill="url(#bgb6)"/>
+  <text x="450" y="38" font-family="Arial" font-size="20" fill="#e2e8f0" text-anchor="middle" font-weight="bold">Skills 创作方法论 — 7 个已建 Skills 全览</text>
 
-  <!-- Skill cards -->
-  skills = [
-    ("01-hermes-install", "Hermes 重装", "#4361ee", "install hermes
-reinstall hermes
-hermes broken", 60, 80),
-    ("02-gstack-install", "gstack WSL2 安装", "#7209b7", "install gstack
-gstack not working
-WSL Chromium", 60, 190),
-    ("03-git-proxy-heal", "Git 代理自愈", "#06d6a0", "git push 失败
-git proxy
-can't connect", 60, 300),
-    ("04-blog-deployer", "GitHub Pages 部署", "#f72585", "Hexo → Pages
-Actions 两分支
-CNAME 复制", 330, 80),
-    ("05-cold-email-sequencer", "冷邮件序列", "#ffd166", "个性化冷邮件
-多封序列
-自动化发送", 330, 190),
-    ("06-content-pipeline", "内容批量生产", "#ef476f", "多平台适配
-小红书/知乎
-公众号文案", 330, 300),
-    ("07-info-arbitrage-monitor", "信息差监控", "#4cc9f0", "域名变动
-WHOIS
-关键词监控", 600, 190),
-  ]
+  <!-- ======== Row 1: 4 cards ======== -->
+  <!-- 01-hermes-install -->
+  <rect x="20" y="60" width="200" height="90" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="2"/>
+  <rect x="20" y="60" width="200" height="30" rx="10" fill="#4361ee"/>
+  <rect x="20" y="78" width="200" height="12" fill="#4361ee"/>
+  <text x="120" y="80" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">01-hermes-install</text>
+  <text x="120" y="106" font-family="Arial" font-size="10" fill="#7b8cde" text-anchor="middle">Hermes 重装 / 修复</text>
+  <text x="120" y="124" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">install hermes</text>
+  <text x="120" y="139" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">reinstall hermes</text>
 
-  for (name, title, color, details, x, y) in skills:
-    w, h = 200, 90
-    # card bg
-    print(f"<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="#1e1e2e" stroke="{color}" stroke-width="2"/>")
-    # header
-    print(f"<rect x="{x}" y="{y}" width="{w}" height="28" rx="10" fill="{color}"/>")
-    print(f"<rect x="{x}" y="{y+14}" width="{w}" height="14" fill="{color}"/>")
-    print(f"<text x="{x+w//2}" y="{y+19}" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">{title}</text>")
-    # details
-    lines = details.split("
-")
-    for i, line in enumerate(lines):
-        print(f"<text x="{x+12}" y="{y+46+i*14}" font-family="Courier New" font-size="9" fill="#94a3b8">{line}</text>")
+  <!-- 02-gstack-install -->
+  <rect x="235" y="60" width="200" height="90" rx="10" fill="#1a1a2e" stroke="#7209b7" stroke-width="2"/>
+  <rect x="235" y="60" width="200" height="30" rx="10" fill="#7209b7"/>
+  <rect x="235" y="78" width="200" height="12" fill="#7209b7"/>
+  <text x="335" y="80" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">02-gstack-install</text>
+  <text x="335" y="106" font-family="Arial" font-size="10" fill="#c77dff" text-anchor="middle">gstack WSL2 浏览器</text>
+  <text x="335" y="124" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">install gstack</text>
+  <text x="335" y="139" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">WSL Chromium</text>
 
-  # Just print the SVG directly
-  print("Done")
+  <!-- 03-git-proxy-heal -->
+  <rect x="450" y="60" width="200" height="90" rx="10" fill="#1a1a2e" stroke="#06d6a0" stroke-width="2"/>
+  <rect x="450" y="60" width="200" height="30" rx="10" fill="#06d6a0"/>
+  <rect x="450" y="78" width="200" height="12" fill="#06d6a0"/>
+  <text x="550" y="80" font-family="Arial" font-size="11" fill="#0f0c29" text-anchor="middle" font-weight="bold">03-git-proxy-heal</text>
+  <text x="550" y="106" font-family="Arial" font-size="10" fill="#90e0ef" text-anchor="middle">Git 代理自愈修复</text>
+  <text x="550" y="124" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">git push 失败</text>
+  <text x="550" y="139" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">代理三级切换</text>
+
+  <!-- 04-blog-deployer -->
+  <rect x="665" y="60" width="200" height="90" rx="10" fill="#1a1a2e" stroke="#f72585" stroke-width="2"/>
+  <rect x="665" y="60" width="200" height="30" rx="10" fill="#f72585"/>
+  <rect x="665" y="78" width="200" height="12" fill="#f72585"/>
+  <text x="765" y="80" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">04-blog-deployer</text>
+  <text x="765" y="106" font-family="Arial" font-size="10" fill="#f5a8d1" text-anchor="middle">GitHub Pages 部署</text>
+  <text x="765" y="124" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">Hexo 两分支</text>
+  <text x="765" y="139" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">CNAME 复制</text>
+
+  <!-- ======== Row 2: 3 cards centered ======== -->
+  <!-- 05-cold-email-sequencer -->
+  <rect x="127" y="168" width="200" height="90" rx="10" fill="#1a1a2e" stroke="#ffd166" stroke-width="2"/>
+  <rect x="127" y="168" width="200" height="30" rx="10" fill="#ffd166"/>
+  <rect x="127" y="186" width="200" height="12" fill="#ffd166"/>
+  <text x="227" y="188" font-family="Arial" font-size="11" fill="#0f0c29" text-anchor="middle" font-weight="bold">05-cold-email-sequencer</text>
+  <text x="227" y="214" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">冷邮件序列生成</text>
+  <text x="227" y="232" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">多封个性化序列</text>
+  <text x="227" y="247" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">自动化发送</text>
+
+  <!-- 06-content-pipeline -->
+  <rect x="342" y="168" width="200" height="90" rx="10" fill="#1a1a2e" stroke="#ef476f" stroke-width="2"/>
+  <rect x="342" y="168" width="200" height="30" rx="10" fill="#ef476f"/>
+  <rect x="342" y="186" width="200" height="12" fill="#ef476f"/>
+  <text x="442" y="188" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">06-content-pipeline</text>
+  <text x="442" y="214" font-family="Arial" font-size="10" fill="#f5a8d1" text-anchor="middle">内容批量生产</text>
+  <text x="442" y="232" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">小红书/知乎/公众号</text>
+  <text x="442" y="247" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">多平台适配文案</text>
+
+  <!-- 07-info-arbitrage-monitor -->
+  <rect x="557" y="168" width="200" height="90" rx="10" fill="#1a1a2e" stroke="#4cc9f0" stroke-width="2"/>
+  <rect x="557" y="168" width="200" height="30" rx="10" fill="#4cc9f0"/>
+  <rect x="557" y="186" width="200" height="12" fill="#4cc9f0"/>
+  <text x="657" y="188" font-family="Arial" font-size="11" fill="#0f0c29" text-anchor="middle" font-weight="bold">07-info-arbitrage-monitor</text>
+  <text x="657" y="214" font-family="Arial" font-size="10" fill="#caf0f8" text-anchor="middle">信息差监控</text>
+  <text x="657" y="232" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">域名/WHOIS 变动</text>
+  <text x="657" y="247" font-family="Courier New" font-size="9" fill="#94a3b8" text-anchor="middle">关键词资讯追踪</text>
+
+  <!-- ======== 底部：设计要点总结 ======== -->
+  <rect x="20" y="285" width="860" height="230" rx="12" fill="#1a1a2e" stroke="#4a4a6a" stroke-width="1.5"/>
+  <text x="450" y="310" font-family="Arial" font-size="14" fill="#e2e8f0" text-anchor="middle" font-weight="bold">7 个 Skills 的共同设计要点</text>
+  <line x1="30" y1="320" x2="870" y2="320" stroke="#4a4a6a" stroke-width="0.8"/>
+
+  <!-- 左列：命名规范 -->
+  <text x="70" y="342" font-family="Arial" font-size="12" fill="#7b8cde" font-weight="bold">命名规范</text>
+  <text x="70" y="362" font-family="Arial" font-size="10" fill="#94a3b8">数字前缀：01、02… 保证加载顺序</text>
+  <text x="70" y="380" font-family="Arial" font-size="10" fill="#94a3b8">英文 slug：用动词开头，简短易记</text>
+  <text x="70" y="398" font-family="Arial" font-size="10" fill="#94a3b8">示例：git-proxy-heal、blog-deployer</text>
+
+  <!-- 中列：触发词设计 -->
+  <text x="320" y="342" font-family="Arial" font-size="12" fill="#c77dff" font-weight="bold">触发词设计</text>
+  <text x="320" y="362" font-family="Arial" font-size="10" fill="#94a3b8">覆盖正常场景 + 错误场景</text>
+  <text x="320" y="380" font-family="Arial" font-size="10" fill="#94a3b8">多个同义表达组合</text>
+  <text x="320" y="398" font-family="Arial" font-size="10" fill="#94a3b8">包含中文描述（中文用户习惯）</text>
+
+  <!-- 右列：内容结构 -->
+  <text x="570" y="342" font-family="Arial" font-size="12" fill="#90e0ef" font-weight="bold">内容结构标准</text>
+  <text x="570" y="362" font-family="Arial" font-size="10" fill="#94a3b8">前置条件 → 核心步骤 → 验证</text>
+  <text x="570" y="380" font-family="Arial" font-size="10" fill="#94a3b8">陷阱提前说明（pitfalls）</text>
+  <text x="570" y="398" font-family="Arial" font-size="10" fill="#94a3b8">条件分支（if/else/三级fallback）</text>
+
+  <!-- 底部分隔线 -->
+  <line x1="30" y1="415" x2="870" y2="415" stroke="#4a4a6a" stroke-width="0.8"/>
+
+  <!-- 底部哲学 -->
+  <text x="450" y="440" font-family="Arial" font-size="13" fill="#ffd166" text-anchor="middle" font-weight="bold">Skills 哲学</text>
+  <rect x="155" y="450" width="140" height="28" rx="6" fill="#4361ee" fill-opacity="0.2"/>
+  <text x="225" y="468" font-family="Arial" font-size="10" fill="#7b8cde" text-anchor="middle">简单任务 → 直接执行</text>
+  <rect x="320" y="450" width="140" height="28" rx="6" fill="#7209b7" fill-opacity="0.2"/>
+  <text x="390" y="468" font-family="Arial" font-size="10" fill="#c77dff" text-anchor="middle">重复任务 → 创建 Skill</text>
+  <rect x="485" y="450" width="140" height="28" rx="6" fill="#06d6a0" fill-opacity="0.2"/>
+  <text x="555" y="468" font-family="Arial" font-size="10" fill="#90e0ef" text-anchor="middle">重要任务 → 先测试再固化</text>
+  <rect x="650" y="450" width="100" height="28" rx="6" fill="#f72585" fill-opacity="0.2"/>
+  <text x="700" y="468" font-family="Arial" font-size="10" fill="#f5a8d1" text-anchor="middle">迭代靠 patch</text>
 </svg>
