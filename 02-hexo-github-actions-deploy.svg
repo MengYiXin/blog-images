@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480">
+  <defs>
+    <linearGradient id="bgb2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f0c29"/><stop offset="100%" stop-color="#302b63"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#06d6a0"/>
+    </marker>
+  </defs>
+  <rect width="900" height="480" rx="16" fill="url(#bgb2)"/>
+  <text x="450" y="38" font-family="Arial" font-size="19" fill="#e2e8f0" text-anchor="middle" font-weight="bold">Hexo + GitHub Actions 两分支自动部署架构</text>
+
+  <!-- source branch -->
+  <rect x="30" y="75" width="210" height="320" rx="12" fill="#1e1e2e" stroke="#7b2cbf" stroke-width="2.5"/>
+  <rect x="30" y="75" width="210" height="36" rx="12" fill="#7b2cbf"/>
+  <rect x="30" y="95" width="210" height="16" fill="#7b2cbf"/>
+  <text x="135" y="99" font-family="Arial" font-size="13" fill="white" text-anchor="middle" font-weight="bold">source 分支</text>
+  <text x="135" y="130" font-family="Arial" font-size="11" fill="#c77dff" text-anchor="middle">Hexo 源文件</text>
+  <rect x="50" y="146" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="135" y="161" font-family="Courier New" font-size="10" fill="#9d8cd6" text-anchor="middle">source/_posts/*.md</text>
+  <rect x="50" y="174" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="135" y="189" font-family="Courier New" font-size="10" fill="#9d8cd6" text-anchor="middle">_config.yml</text>
+  <rect x="50" y="202" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="135" y="217" font-family="Courier New" font-size="10" fill="#9d8cd6" text-anchor="middle">package.json</text>
+  <rect x="50" y="230" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="135" y="245" font-family="Courier New" font-size="10" fill="#9d8cd6" text-anchor="middle">themes/keep (npm)</text>
+  <rect x="50" y="258" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="135" y="273" font-family="Courier New" font-size="10" fill="#9d8cd6" text-anchor="middle">source/CNAME</text>
+  <rect x="50" y="286" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="135" y="301" font-family="Courier New" font-size="10" fill="#9d8cd6" text-anchor="middle">.github/workflows/</text>
+  <rect x="50" y="314" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="135" y="329" font-family="Courier New" font-size="10" fill="#9d8cd6" text-anchor="middle">scaffolds/</text>
+
+  <!-- git push arrow -->
+  <line x1="240" y1="220" x2="305" y2="220" stroke="#06d6a0" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="272" y="210" font-family="Arial" font-size="11" fill="#06d6a0" text-anchor="middle">git push</text>
+
+  <!-- GitHub Actions -->
+  <rect x="315" y="155" width="170" height="130" rx="12" fill="#24243e" stroke="#4361ee" stroke-width="2"/>
+  <text x="400" y="185" font-family="Arial" font-size="13" fill="#4361ee" text-anchor="middle" font-weight="bold">GitHub Actions</text>
+  <text x="400" y="203" font-family="Arial" font-size="11" fill="#8b9fe8" text-anchor="middle">自动化构建环境</text>
+  <rect x="335" y="215" width="130" height="22" rx="4" fill="#1a1a2e" stroke="#f72585" stroke-width="1.5"/>
+  <text x="400" y="230" font-family="Courier New" font-size="10" fill="#f72585" text-anchor="middle">npm ci</text>
+  <rect x="335" y="243" width="130" height="22" rx="4" fill="#1a1a2e" stroke="#f72585" stroke-width="1.5"/>
+  <text x="400" y="258" font-family="Courier New" font-size="10" fill="#f72585" text-anchor="middle">hexo generate</text>
+
+  <!-- clone & copy arrow -->
+  <line x1="485" y1="220" x2="545" y2="220" stroke="#06d6a0" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="515" y="210" font-family="Arial" font-size="11" fill="#06d6a0" text-anchor="middle">clone master</text>
+
+  <!-- master branch -->
+  <rect x="555" y="75" width="210" height="320" rx="12" fill="#1e1e2e" stroke="#06d6a0" stroke-width="2.5"/>
+  <rect x="555" y="75" width="210" height="36" rx="12" fill="#06d6a0"/>
+  <rect x="555" y="95" width="210" height="16" fill="#06d6a0"/>
+  <text x="660" y="99" font-family="Arial" font-size="13" fill="#0f0c29" text-anchor="middle" font-weight="bold">master 分支</text>
+  <text x="660" y="130" font-family="Arial" font-size="11" fill="#90e0ef" text-anchor="middle">静态 HTML 文件</text>
+  <rect x="575" y="146" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="660" y="161" font-family="Courier New" font-size="10" fill="#90e0ef" text-anchor="middle">public/index.html</text>
+  <rect x="575" y="174" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="660" y="189" font-family="Courier New" font-size="10" fill="#90e0ef" text-anchor="middle">public/2026/05/**</text>
+  <rect x="575" y="202" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="660" y="217" font-family="Courier New" font-size="10" fill="#90e0ef" text-anchor="middle">public/images/*</text>
+  <rect x="575" y="230" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="660" y="245" font-family="Courier New" font-size="10" fill="#ef476f" text-anchor="middle">CNAME ← 显式复制！</text>
+  <rect x="575" y="258" width="170" height="22" rx="4" fill="#2d2d44"/>
+  <text x="660" y="273" font-family="Courier New" font-size="10" fill="#90e0ef" text-anchor="middle">DEPLOY_KEY 推送</text>
+  <text x="660" y="305" font-family="Arial" font-size="11" fill="#ef476f" text-anchor="middle">⚠ 必须 cp source/CNAME</text>
+  <text x="660" y="322" font-family="Arial" font-size="11" fill="#ef476f" text-anchor="middle">⚠ 文件名必须英文 slug</text>
+  <text x="660" y="339" font-family="Arial" font-size="11" fill="#ffd166" text-anchor="middle">⚠ url 改为真实域名</text>
+
+  <!-- GitHub Pages arrow -->
+  <line x1="660" y1="395" x2="660" y2="435" stroke="#ffd166" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="710" y="418" font-family="Arial" font-size="11" fill="#ffd166" text-anchor="middle">GitHub Pages</text>
+
+  <!-- Domain badge -->
+  <rect x="540" y="435" width="240" height="36" rx="10" fill="#1a1a2e" stroke="#ffd166" stroke-width="2"/>
+  <text x="660" y="458" font-family="Arial" font-size="14" fill="#ffd166" text-anchor="middle" font-weight="bold">mengyx.com.cn</text>
+</svg>

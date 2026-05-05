@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="bgb6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0533"/><stop offset="100%" stop-color="#2d1b69"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="500" rx="16" fill="url(#bgb6)"/>
+  <text x="450" y="40" font-family="Arial" font-size="19" fill="#e2e8f0" text-anchor="middle" font-weight="bold">Skills 创作方法论 — 7 个已建 Skills 全览</text>
+
+  <!-- Skill cards -->
+  skills = [
+    ("01-hermes-install", "Hermes 重装", "#4361ee", "install hermes
+reinstall hermes
+hermes broken", 60, 80),
+    ("02-gstack-install", "gstack WSL2 安装", "#7209b7", "install gstack
+gstack not working
+WSL Chromium", 60, 190),
+    ("03-git-proxy-heal", "Git 代理自愈", "#06d6a0", "git push 失败
+git proxy
+can't connect", 60, 300),
+    ("04-blog-deployer", "GitHub Pages 部署", "#f72585", "Hexo → Pages
+Actions 两分支
+CNAME 复制", 330, 80),
+    ("05-cold-email-sequencer", "冷邮件序列", "#ffd166", "个性化冷邮件
+多封序列
+自动化发送", 330, 190),
+    ("06-content-pipeline", "内容批量生产", "#ef476f", "多平台适配
+小红书/知乎
+公众号文案", 330, 300),
+    ("07-info-arbitrage-monitor", "信息差监控", "#4cc9f0", "域名变动
+WHOIS
+关键词监控", 600, 190),
+  ]
+
+  for (name, title, color, details, x, y) in skills:
+    w, h = 200, 90
+    # card bg
+    print(f"<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="#1e1e2e" stroke="{color}" stroke-width="2"/>")
+    # header
+    print(f"<rect x="{x}" y="{y}" width="{w}" height="28" rx="10" fill="{color}"/>")
+    print(f"<rect x="{x}" y="{y+14}" width="{w}" height="14" fill="{color}"/>")
+    print(f"<text x="{x+w//2}" y="{y+19}" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">{title}</text>")
+    # details
+    lines = details.split("
+")
+    for i, line in enumerate(lines):
+        print(f"<text x="{x+12}" y="{y+46+i*14}" font-family="Courier New" font-size="9" fill="#94a3b8">{line}</text>")
+
+  # Just print the SVG directly
+  print("Done")
+</svg>

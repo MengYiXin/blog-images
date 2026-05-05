@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="bgb4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0533"/><stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+    <marker id="arr4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#06d6a0"/>
+    </marker>
+  </defs>
+  <rect width="900" height="500" rx="16" fill="url(#bgb4)"/>
+  <text x="450" y="40" font-family="Arial" font-size="19" fill="#e2e8f0" text-anchor="middle" font-weight="bold">Skill 创作五步法 — 从需求到自动化</text>
+
+  <!-- Step 1: 命名 -->
+  <rect x="30" y="75" width="150" height="300" rx="12" fill="#1e1e2e" stroke="#4361ee" stroke-width="2.5"/>
+  <rect x="30" y="75" width="150" height="40" rx="12" fill="#4361ee"/>
+  <rect x="30" y="95" width="150" height="20" fill="#4361ee"/>
+  <text x="105" y="101" font-family="Arial" font-size="13" fill="white" text-anchor="middle" font-weight="bold">Step 1 命名</text>
+  <text x="105" y="140" font-family="Arial" font-size="11" fill="#a0a8d8" text-anchor="middle">数字前缀排序</text>
+  <rect x="45" y="155" width="120" height="22" rx="4" fill="#2d2d44"/>
+  <text x="105" y="170" font-family="Courier New" font-size="10" fill="#7b8cde" text-anchor="middle">01-hermes-install</text>
+  <text x="105" y="200" font-family="Arial" font-size="11" fill="#a0a8d8" text-anchor="middle">英文 slug 格式</text>
+  <text x="105" y="220" font-family="Arial" font-size="11" fill="#a0a8d8" text-anchor="middle">用动词开头</text>
+  <text x="105" y="240" font-family="Arial" font-size="11" fill="#a0a8d8" text-anchor="middle">简短易记</text>
+
+  <!-- arrow -->
+  <line x1="180" y1="225" x2="220" y2="225" stroke="#06d6a0" stroke-width="2" marker-end="url(#arr4)"/>
+
+  <!-- Step 2: 触发词 -->
+  <rect x="230" y="75" width="150" height="300" rx="12" fill="#1e1e2e" stroke="#7209b7" stroke-width="2.5"/>
+  <rect x="230" y="75" width="150" height="40" rx="12" fill="#7209b7"/>
+  <rect x="230" y="95" width="150" height="20" fill="#7209b7"/>
+  <text x="305" y="101" font-family="Arial" font-size="13" fill="white" text-anchor="middle" font-weight="bold">Step 2 触发词</text>
+  <text x="305" y="140" font-family="Arial" font-size="11" fill="#c77dff" text-anchor="middle">覆盖正常场景</text>
+  <rect x="245" y="155" width="120" height="22" rx="4" fill="#2d2d44"/>
+  <text x="305" y="170" font-family="Courier New" font-size="9" fill="#9d4edd" text-anchor="middle">"install hermes"</text>
+  <text x="305" y="195" font-family="Arial" font-size="11" fill="#c77dff" text-anchor="middle">覆盖错误场景</text>
+  <rect x="245" y="210" width="120" height="22" rx="4" fill="#2d2d44"/>
+  <text x="305" y="225" font-family="Courier New" font-size="9" fill="#9d4edd" text-anchor="middle">"hermes broken"</text>
+  <text x="305" y="255" font-family="Arial" font-size="11" fill="#c77dff" text-anchor="middle">包含同义表达</text>
+  <text x="305" y="275" font-family="Arial" font-size="11" fill="#c77dff" text-anchor="middle">多个触发词组合</text>
+
+  <!-- arrow -->
+  <line x1="380" y1="225" x2="420" y2="225" stroke="#06d6a0" stroke-width="2" marker-end="url(#arr4)"/>
+
+  <!-- Step 3: 内容编写 -->
+  <rect x="430" y="75" width="150" height="300" rx="12" fill="#1e1e2e" stroke="#f72585" stroke-width="2.5"/>
+  <rect x="430" y="75" width="150" height="40" rx="12" fill="#f72585"/>
+  <rect x="430" y="95" width="150" height="20" fill="#f72585"/>
+  <text x="505" y="101" font-family="Arial" font-size="13" fill="white" text-anchor="middle" font-weight="bold">Step 3 编写内容</text>
+  <text x="505" y="140" font-family="Arial" font-size="11" fill="#f5a8d1" text-anchor="middle">前置条件检查</text>
+  <rect x="445" y="155" width="120" height="22" rx="4" fill="#2d2d44"/>
+  <text x="505" y="170" font-family="Courier New" font-size="9" fill="#f72585" text-anchor="middle">uv --version</text>
+  <text x="505" y="200" font-family="Arial" font-size="11" fill="#f5a8d1" text-anchor="middle">核心步骤 + 验证</text>
+  <rect x="445" y="215" width="120" height="22" rx="4" fill="#2d2d44"/>
+  <text x="505" y="230" font-family="Courier New" font-size="9" fill="#f72585" text-anchor="middle">curl ... && OK</text>
+  <text x="505" y="260" font-family="Arial" font-size="11" fill="#f5a8d1" text-anchor="middle">常见问题处理</text>
+  <rect x="445" y="275" width="120" height="22" rx="4" fill="#2d2d44"/>
+  <text x="505" y="290" font-family="Courier New" font-size="9" fill="#f72585" text-anchor="middle">traps &amp; pitfalls</text>
+
+  <!-- arrow -->
+  <line x1="580" y1="225" x2="620" y2="225" stroke="#06d6a0" stroke-width="2" marker-end="url(#arr4)"/>
+
+  <!-- Step 4: 测试 -->
+  <rect x="630" y="75" width="150" height="300" rx="12" fill="#1e1e2e" stroke="#06d6a0" stroke-width="2.5"/>
+  <rect x="630" y="75" width="150" height="40" rx="12" fill="#06d6a0"/>
+  <rect x="630" y="95" width="150" height="20" fill="#06d6a0"/>
+  <text x="705" y="101" font-family="Arial" font-size="13" fill="#0f0c29" text-anchor="middle" font-weight="bold">Step 4 测试</text>
+  <text x="705" y="140" font-family="Arial" font-size="11" fill="#90e0ef" text-anchor="middle">用触发词激活</text>
+  <rect x="645" y="155" width="120" height="22" rx="4" fill="#2d2d44"/>
+  <text x="705" y="170" font-family="Courier New" font-size="9" fill="#06d6a0" text-anchor="middle">skill_view(name)</text>
+  <text x="705" y="200" font-family="Arial" font-size="11" fill="#90e0ef" text-anchor="middle">完整执行一遍</text>
+  <text x="705" y="220" font-family="Arial" font-size="11" fill="#90e0ef" text-anchor="middle">完整流程跑通</text>
+  <text x="705" y="250" font-family="Arial" font-size="11" fill="#90e0ef" text-anchor="middle">修复发现的问题</text>
+  <rect x="645" y="265" width="120" height="22" rx="4" fill="#2d2d44"/>
+  <text x="705" y="280" font-family="Courier New" font-size="9" fill="#06d6a0" text-anchor="middle">iterate → patch</text>
+
+  <!-- Step 5: 发布 -->
+  <rect x="315" y="390" width="270" height="80" rx="12" fill="#1e1e2e" stroke="#ffd166" stroke-width="2.5"/>
+  <rect x="315" y="390" width="270" height="36" rx="12" fill="#ffd166"/>
+  <rect x="315" y="410" width="270" height="16" fill="#ffd166"/>
+  <text x="450" y="414" font-family="Arial" font-size="13" fill="#0f0c29" text-anchor="middle" font-weight="bold">Step 5 发布与迭代</text>
+  <text x="375" y="442" font-family="Arial" font-size="11" fill="#ffe8a3" text-anchor="middle">git push → ~/.hermes/skills/</text>
+  <text x="525" y="442" font-family="Arial" font-size="11" fill="#ffe8a3" text-anchor="middle">更新记忆文件</text>
+
+  <!-- Flow arrows to Step 5 -->
+  <line x1="105" y1="375" x2="105" y2="390" stroke="#06d6a0" stroke-width="2" marker-end="url(#arr4)"/>
+  <line x1="305" y1="375" x2="450" y2="390" stroke="#06d6a0" stroke-width="2" marker-end="url(#arr4)"/>
+  <line x1="505" y1="375" x2="450" y2="390" stroke="#06d6a0" stroke-width="2" marker-end="url(#arr4)"/>
+  <line x1="705" y1="375" x2="450" y2="390" stroke="#06d6a0" stroke-width="2" marker-end="url(#arr4)"/>
+
+  <!-- Principles -->
+  <text x="810" y="180" font-family="Arial" font-size="11" fill="#94a3b8" text-anchor="middle" transform="rotate(90,810,180)">设计原则</text>
+  <rect x="795" y="210" width="90" height="150" rx="8" fill="#1a1a2e" stroke="#4a4a6a" stroke-width="1"/>
+  <text x="840" y="240" font-family="Arial" font-size="10" fill="#e2e8f0" text-anchor="middle">触发词</text>
+  <text x="840" y="240" font-family="Arial" font-size="10" fill="#e2e8f0" text-anchor="middle">要具体</text>
+  <line x1="795" y1="250" x2="885" y2="250" stroke="#4a4a6a"/>
+  <text x="840" y="275" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">坑要</text>
+  <text x="840" y="290" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">提前</text>
+  <text x="840" y="305" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">说明</text>
+  <line x1="795" y1="315" x2="885" y2="315" stroke="#4a4a6a"/>
+  <text x="840" y="340" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">条件</text>
+  <text x="840" y="355" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">分支</text>
+  <text x="840" y="370" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">覆盖全</text>
+</svg>

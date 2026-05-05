@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="bgb5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="500" rx="16" fill="url(#bgb5)"/>
+  <text x="450" y="40" font-family="Arial" font-size="19" fill="#e2e8f0" text-anchor="middle" font-weight="bold">Claude Code 使用全记录 — 技术栈全景</text>
+
+  <!-- Claude Code center -->
+  <circle cx="450" cy="210" r="65" fill="#1e3a5f" stroke="#e94560" stroke-width="3"/>
+  <text x="450" y="198" font-family="Arial" font-size="14" fill="#e94560" text-anchor="middle" font-weight="bold">Claude Code</text>
+  <text x="450" y="216" font-family="Arial" font-size="11" fill="#f5a8d1" text-anchor="middle">v2.1.122</text>
+  <text x="450" y="232" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">Anthropic AI 编程助手</text>
+
+  <!-- Hermes (top-left) -->
+  <rect x="80" y="80" width="160" height="80" rx="10" fill="#1b4332" stroke="#52b788" stroke-width="2"/>
+  <text x="160" y="108" font-family="Arial" font-size="12" fill="#52b788" text-anchor="middle" font-weight="bold">Hermes Agent</text>
+  <text x="160" y="128" font-family="Arial" font-size="10" fill="#95d5b2" text-anchor="middle">v0.12.0 · Nous Research</text>
+  <text x="160" y="146" font-family="Arial" font-size="10" fill="#95d5b2" text-anchor="middle">远程自主任务执行</text>
+  <line x1="240" y1="120" x2="385" y2="175" stroke="#52b788" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="240" cy="120" r="4" fill="#52b788"/>
+
+  <!-- gstack (top-right) -->
+  <rect x="660" y="80" width="160" height="80" rx="10" fill="#2d3142" stroke="#90e0ef" stroke-width="2"/>
+  <text x="740" y="108" font-family="Arial" font-size="12" fill="#90e0ef" text-anchor="middle" font-weight="bold">gstack</text>
+  <text x="740" y="128" font-family="Arial" font-size="10" fill="#caf0f8" text-anchor="middle">Headless Chromium</text>
+  <text x="740" y="146" font-family="Arial" font-size="10" fill="#06d6a0" text-anchor="middle">WSL --no-sandbox ✅</text>
+  <line x1="660" y1="120" x2="515" y2="175" stroke="#90e0ef" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="660" cy="120" r="4" fill="#90e0ef"/>
+
+  <!-- Skills (left) -->
+  <rect x="40" y="220" width="160" height="100" rx="10" fill="#4a1942" stroke="#f72585" stroke-width="2"/>
+  <text x="120" y="250" font-family="Arial" font-size="12" fill="#f72585" text-anchor="middle" font-weight="bold">Skills × 7</text>
+  <text x="120" y="270" font-family="Arial" font-size="10" fill="#f5a8d1" text-anchor="middle">01-hermes-install</text>
+  <text x="120" y="287" font-family="Arial" font-size="10" fill="#f5a8d1" text-anchor="middle">02-gstack-install</text>
+  <text x="120" y="304" font-family="Arial" font-size="10" fill="#f5a8d1" text-anchor="middle">03-git-proxy-heal</text>
+  <line x1="200" y1="270" x2="383" y2="235" stroke="#f72585" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="200" cy="270" r="4" fill="#f72585"/>
+
+  <!-- Memory (right) -->
+  <rect x="700" y="220" width="160" height="100" rx="10" fill="#1e1e2e" stroke="#ffd166" stroke-width="2"/>
+  <text x="780" y="250" font-family="Arial" font-size="12" fill="#ffd166" text-anchor="middle" font-weight="bold">记忆系统</text>
+  <text x="780" y="270" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">user · feedback</text>
+  <text x="780" y="287" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">project · reference</text>
+  <text x="780" y="304" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">IMA 知识库</text>
+  <line x1="700" y1="270" x2="517" y2="235" stroke="#ffd166" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="700" cy="270" r="4" fill="#ffd166"/>
+
+  <!-- Environment (bottom-left) -->
+  <rect x="80" y="370" width="160" height="80" rx="10" fill="#1e5f74" stroke="#4cc9f0" stroke-width="2"/>
+  <text x="160" y="400" font-family="Arial" font-size="12" fill="#4cc9f0" text-anchor="middle" font-weight="bold">环境</text>
+  <text x="160" y="418" font-family="Arial" font-size="10" fill="#a0e4ec" text-anchor="middle">Windows 11 + WSL2 Ubuntu</text>
+  <text x="160" y="436" font-family="Arial" font-size="10" fill="#a0e4ec" text-anchor="middle">Python 3.11 · Node.js v22</text>
+
+  <!-- reporter-web (bottom-right) -->
+  <rect x="660" y="370" width="160" height="80" rx="10" fill="#3d405b" stroke="#ffd166" stroke-width="2"/>
+  <text x="740" y="400" font-family="Arial" font-size="12" fill="#ffd166" text-anchor="middle" font-weight="bold">reporter-web</text>
+  <text x="740" y="418" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">React + Tailwind + Vite</text>
+  <text x="740" y="436" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">GitHub Pages + Gist</text>
+
+  <!-- Version row -->
+  <rect x="300" y="430" width="300" height="32" rx="8" fill="#0f3460" stroke="#4361ee" stroke-width="1.5"/>
+  <text x="450" y="452" font-family="Arial" font-size="11" fill="#4361ee" text-anchor="middle">记录于 2026-05-05 · mengyx.com.cn</text>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="bgb7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f2027"/><stop offset="100%" stop-color="#2c5364"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="500" rx="16" fill="url(#bgb7)"/>
+  <text x="450" y="40" font-family="Arial" font-size="19" fill="#e2e8f0" text-anchor="middle" font-weight="bold">AI 工具配置笔记 — 常见错误速查</text>
+
+  <!-- Clash proxy config -->
+  <rect x="30" y="75" width="250" height="160" rx="12" fill="#1e1e2e" stroke="#06d6a0" stroke-width="2"/>
+  <rect x="30" y="75" width="250" height="32" rx="12" fill="#1b4332"/>
+  <rect x="30" y="93" width="250" height="14" fill="#1b4332"/>
+  <text x="155" y="96" font-family="Arial" font-size="13" fill="#52b788" text-anchor="middle" font-weight="bold">Clash 代理配置</text>
+  <text x="155" y="125" font-family="Arial" font-size="11" fill="#95d5b2" text-anchor="middle">~/.config/clash*/config.yaml</text>
+  <rect x="45" y="138" width="220" height="22" rx="4" fill="#2d2d44"/>
+  <text x="155" y="153" font-family="Courier New" font-size="10" fill="#52b788" text-anchor="middle">mixed-port: 7890</text>
+  <rect x="45" y="166" width="220" height="22" rx="4" fill="#2d2d44"/>
+  <text x="155" y="181" font-family="Courier New" font-size="9" fill="#95d5b2" text-anchor="middle">git config --global http.proxy 127.0.0.1:7890</text>
+  <text x="155" y="218" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">清理: git config --global --unset http.proxy</text>
+
+  <!-- Hermes config traps -->
+  <rect x="325" y="75" width="250" height="160" rx="12" fill="#1e1e2e" stroke="#f72585" stroke-width="2"/>
+  <rect x="325" y="75" width="250" height="32" rx="12" fill="#4a1942"/>
+  <rect x="325" y="93" width="250" height="14" fill="#4a1942"/>
+  <text x="450" y="96" font-family="Arial" font-size="13" fill="#f72585" text-anchor="middle" font-weight="bold">Hermes base_url 陷阱</text>
+  <text x="450" y="125" font-family="Arial" font-size="10" fill="#ef476f" text-anchor="middle">X 错误：https://.../anthropic/v1</text>
+  <rect x="340" y="134" width="220" height="22" rx="4" fill="#2d2d44"/>
+  <text x="450" y="149" font-family="Courier New" font-size="9" fill="#f72585" text-anchor="middle">base_url: .../anthropic/v1  (多了 /v1)</text>
+  <text x="450" y="175" font-family="Arial" font-size="10" fill="#52b788" text-anchor="middle">OK 正确：https://api.minimaxi.com/anthropic</text>
+  <rect x="340" y="186" width="220" height="22" rx="4" fill="#1b4332"/>
+  <text x="450" y="201" font-family="Courier New" font-size="9" fill="#52b788" text-anchor="middle">base_url: https://api.minimaxi.com/anthropic</text>
+
+  <!-- Python issues -->
+  <rect x="620" y="75" width="250" height="160" rx="12" fill="#1e1e2e" stroke="#ffd166" stroke-width="2"/>
+  <rect x="620" y="75" width="250" height="32" rx="12" fill="#3d3d00"/>
+  <rect x="620" y="93" width="250" height="14" fill="#3d3d00"/>
+  <text x="745" y="96" font-family="Arial" font-size="13" fill="#ffd166" text-anchor="middle" font-weight="bold">Python / pip 错误</text>
+  <text x="745" y="125" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">externally-managed-environment</text>
+  <text x="745" y="143" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">Debian/Ubuntu PEP 668 保护</text>
+  <rect x="635" y="152" width="220" height="22" rx="4" fill="#2d2d44"/>
+  <text x="745" y="167" font-family="Courier New" font-size="9" fill="#ffd166" text-anchor="middle">pip install xxx --break-system-packages</text>
+  <text x="745" y="196" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">Python 3.11 not found</text>
+  <rect x="635" y="206" width="220" height="22" rx="4" fill="#2d2d44"/>
+  <text x="745" y="221" font-family="Courier New" font-size="9" fill="#ffd166" text-anchor="middle">uv python install 3.11</text>
+
+  <!-- WSL Chromium -->
+  <rect x="30" y="265" width="390" height="130" rx="12" fill="#1e1e2e" stroke="#90e0ef" stroke-width="2"/>
+  <rect x="30" y="265" width="390" height="32" rx="12" fill="#2d3142"/>
+  <rect x="30" y="283" width="390" height="14" fill="#2d3142"/>
+  <text x="225" y="286" font-family="Arial" font-size="13" fill="#90e0ef" text-anchor="middle" font-weight="bold">WSL Chromium --no-sandbox 修复</text>
+  <text x="225" y="318" font-family="Arial" font-size="11" fill="#ef476f" text-anchor="middle">错误: Running as root without --no-sandbox</text>
+  <rect x="45" y="332" width="360" height="22" rx="4" fill="#2d2d44"/>
+  <text x="225" y="347" font-family="Courier New" font-size="10" fill="#06d6a0" text-anchor="middle">WSL_DISTRO_NAME 检测 - -no-sandbox  [已内置]</text>
+  <text x="225" y="380" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">LD_LIBRARY_PATH: .../chromium-deps/usr/lib/x86_64-linux-gnu</text>
+
+  <!-- Quick fixes table -->
+  <rect x="455" y="265" width="415" height="210" rx="12" fill="#1e1e2e" stroke="#7b2cbf" stroke-width="2"/>
+  <rect x="455" y="265" width="415" height="32" rx="12" fill="#2d1b4e"/>
+  <rect x="455" y="283" width="415" height="14" fill="#2d1b4e"/>
+  <text x="662" y="286" font-family="Arial" font-size="13" fill="#c77dff" text-anchor="middle" font-weight="bold">快速修复命令表</text>
+
+  <text x="470" y="315" font-family="Arial" font-size="10" fill="#c77dff">hermes 命令找不到</text>
+  <rect x="470" y="320" width="390" height="18" rx="3" fill="#2d2d44"/>
+  <text x="480" y="333" font-family="Courier New" font-size="9" fill="#ffe8a3">echo 'export PATH="$HOME/.local/bin:$PATH"' &gt;&gt; ~/.bashrc</text>
+
+  <text x="470" y="353" font-family="Arial" font-size="10" fill="#c77dff">pip 安装失败</text>
+  <rect x="470" y="358" width="390" height="18" rx="3" fill="#2d2d44"/>
+  <text x="480" y="371" font-family="Courier New" font-size="9" fill="#ffe8a3">pip install xxx --break-system-packages</text>
+
+  <text x="470" y="391" font-family="Arial" font-size="10" fill="#c77dff">git push 失败（配代理）</text>
+  <rect x="470" y="396" width="390" height="18" rx="3" fill="#2d2d44"/>
+  <text x="480" y="409" font-family="Courier New" font-size="9" fill="#ffe8a3">git config --global http.proxy http://127.0.0.1:7890</text>
+
+  <text x="470" y="429" font-family="Arial" font-size="10" fill="#c77dff">清理 git 代理</text>
+  <rect x="470" y="434" width="390" height="18" rx="3" fill="#2d2d44"/>
+  <text x="480" y="447" font-family="Courier New" font-size="9" fill="#ffe8a3">git config --global --unset http.proxy &amp;&amp; --unset https.proxy</text>
+
+  <text x="470" y="467" font-family="Arial" font-size="10" fill="#c77dff">检查 Clash 端口</text>
+  <rect x="470" y="472" width="390" height="18" rx="3" fill="#2d2d44"/>
+  <text x="480" y="485" font-family="Courier New" font-size="9" fill="#ffe8a3">grep 'mixed-port:' ~/.config/clash*/config.yaml</text>
+</svg>

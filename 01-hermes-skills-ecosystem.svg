@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="520" rx="16" fill="url(#bg1)"/>
+  <text x="450" y="42" font-family="Arial" font-size="20" fill="#e2e8f0" text-anchor="middle" font-weight="bold">Hermes Agent Skills 生态全景图</text>
+
+  <!-- center -->
+  <circle cx="450" cy="230" r="60" fill="#0f3460" stroke="#e94560" stroke-width="3" filter="url(#glow)"/>
+  <text x="450" y="222" font-family="Arial" font-size="13" fill="#e94560" text-anchor="middle" font-weight="bold">Hermes Agent</text>
+  <text x="450" y="240" font-family="Arial" font-size="11" fill="#e94560" text-anchor="middle">v0.12.0 · WSL2</text>
+
+  <!-- blog-deployer -->
+  <rect x="40" y="70" width="170" height="90" rx="10" fill="#1e5f74" stroke="#4cc9f0" stroke-width="2"/>
+  <text x="125" y="100" font-family="Arial" font-size="12" fill="#4cc9f0" text-anchor="middle" font-weight="bold">blog-deployer</text>
+  <text x="125" y="120" font-family="Arial" font-size="10" fill="#a0e4ec" text-anchor="middle">Hexo → GitHub Pages</text>
+  <text x="125" y="136" font-family="Arial" font-size="10" fill="#a0e4ec" text-anchor="middle">Actions 两分支自动</text>
+  <text x="125" y="152" font-family="Arial" font-size="10" fill="#ef476f" text-anchor="middle">⚠ 英文 slug 文件名</text>
+  <line x1="210" y1="115" x2="388" y2="195" stroke="#4cc9f0" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="210" cy="115" r="4" fill="#4cc9f0"/>
+
+  <!-- git-proxy-heal -->
+  <rect x="40" y="210" width="170" height="90" rx="10" fill="#1b4332" stroke="#52b788" stroke-width="2"/>
+  <text x="125" y="240" font-family="Arial" font-size="12" fill="#52b788" text-anchor="middle" font-weight="bold">git-proxy-heal</text>
+  <text x="125" y="260" font-family="Arial" font-size="10" fill="#95d5b2" text-anchor="middle">WSL Git 代理自愈</text>
+  <text x="125" y="276" font-family="Arial" font-size="10" fill="#95d5b2" text-anchor="middle">三级自动 Fallback</text>
+  <text x="125" y="292" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">Clash/ghproxy/直连</text>
+  <line x1="210" y1="255" x2="388" y2="235" stroke="#52b788" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="210" cy="255" r="4" fill="#52b788"/>
+
+  <!-- session-backup -->
+  <rect x="40" y="350" width="170" height="90" rx="10" fill="#4a1942" stroke="#f72585" stroke-width="2"/>
+  <text x="125" y="380" font-family="Arial" font-size="12" fill="#f72585" text-anchor="middle" font-weight="bold">session-backup</text>
+  <text x="125" y="400" font-family="Arial" font-size="10" fill="#f5a8d1" text-anchor="middle">Session 备份轮询</text>
+  <text x="125" y="416" font-family="Arial" font-size="10" fill="#f5a8d1" text-anchor="middle">Cron 驱动 · 最多30份</text>
+  <text x="125" y="432" font-family="Arial" font-size="10" fill="#f5a8d1" text-anchor="middle">每20条消息触发</text>
+  <line x1="210" y1="350" x2="388" y2="280" stroke="#f72585" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="210" cy="350" r="4" fill="#f72585"/>
+
+  <!-- education-data-analysis -->
+  <rect x="690" y="70" width="170" height="90" rx="10" fill="#3d405b" stroke="#ffd166" stroke-width="2"/>
+  <text x="775" y="100" font-family="Arial" font-size="12" fill="#ffd166" text-anchor="middle" font-weight="bold">education-data</text>
+  <text x="775" y="120" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">跨省高校对比分析</text>
+  <text x="775" y="136" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">软科排名 · 录取分数</text>
+  <text x="775" y="152" font-family="Arial" font-size="10" fill="#ffe8a3" text-anchor="middle">Box-Drawing 表格</text>
+  <line x1="690" y1="115" x2="512" y2="195" stroke="#ffd166" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="690" cy="115" r="4" fill="#ffd166"/>
+
+  <!-- gstack -->
+  <rect x="690" y="210" width="170" height="90" rx="10" fill="#2d3142" stroke="#90e0ef" stroke-width="2"/>
+  <text x="775" y="240" font-family="Arial" font-size="12" fill="#90e0ef" text-anchor="middle" font-weight="bold">gstack</text>
+  <text x="775" y="260" font-family="Arial" font-size="10" fill="#caf0f8" text-anchor="middle">Headless Chromium</text>
+  <text x="775" y="276" font-family="Arial" font-size="10" fill="#caf0f8" text-anchor="middle">WSL --no-sandbox</text>
+  <text x="775" y="292" font-family="Arial" font-size="10" fill="#06d6a0" text-anchor="middle">✅ 已内置自动修复</text>
+  <line x1="690" y1="255" x2="512" y2="235" stroke="#90e0ef" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="690" cy="255" r="4" fill="#90e0ef"/>
+
+  <!-- memory -->
+  <rect x="690" y="350" width="170" height="90" rx="10" fill="#1a1a2e" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="775" y="380" font-family="Arial" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="bold">记忆系统</text>
+  <text x="775" y="400" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">yixin · 华鲲振宇</text>
+  <text x="775" y="416" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">副业变现 · AI工具</text>
+  <text x="775" y="432" font-family="Arial" font-size="10" fill="#94a3b8" text-anchor="middle">WSL2 + F盘存储</text>
+  <line x1="690" y1="395" x2="512" y2="280" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="690" cy="395" r="4" fill="#94a3b8"/>
+
+  <!-- Version -->
+  <rect x="370" y="420" width="160" height="30" rx="8" fill="#0f3460" stroke="#4361ee" stroke-width="1.5"/>
+  <text x="450" y="440" font-family="Arial" font-size="11" fill="#4361ee" text-anchor="middle">2026-05 · mengyx.com.cn</text>
+</svg>
